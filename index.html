@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    
+    <!---CSS style--->
+    <link rel="stylesheet" href="style/style.css">
+    
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <title>if</title>
+    
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="./img/if_logo.jpg" alt="logo_if"></a>
+        <nav>
+            <ul>
+                <li>
+                    <a href="./pages/sobre-nosotros.html">Sobre nosotros</a>
+                </li>
+                <li>
+                    <a href="./pages/servicios.html">Servicios</a>
+                </li>
+                <li>
+                    <a href="./pages/portfolio.html">Porfolio</a>
+                </li>
+                <li>
+                    <a href="./pages/contacto.html">Contacto</a>
+                </li>
+            </ul>
+            
+        </nav>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="./img/if_logo.jpg" alt="Logo" class="d-inline-block align-text-top">
+                </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="./pages/servicios.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Servicios
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Exterior</a></li>
+                            <li><a class="dropdown-item" href="#">Interior</a></li>
+                            <li><a class="dropdown-item" href="#">Muebles</a></li>
+                            <li><a class="dropdown-item" href="#">Jardines</a></li>
+                        </ul>
+                    </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="./pages/portfolio.html">Proyectos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/sobre-nosotros.html">Sobre nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    
+    <main>
+        <section id="heroHome">
+            <h1 class="titleHome">Estudio de interiorismo y reformas integrales</h1>
+            <button class="botonBlack">¡Contactanos!</button>
+        </section>
+
+        <section class="bgBlack">
+            <div class="container">
+                <img class="img_intro" src="./img/impulso-creativo.jpg">
+                <div>
+                    <h2 class="textWhite">Un proceso creativo, participativo y transparente</h2>
+                    <p class="textWhite">En nuestro proceso creativo, cada paso es una colaboración abierta y transparente. Trabajamos de la mano con nuestros clientes, fomentando la participación activa y asegurando que sus ideas sean escuchadas en todo momento. Creemos que la creatividad florece cuando se comparten perspectivas y se construye juntos, lo que nos permite ofrecer soluciones únicas y personalizadas. La transparencia es clave en cada etapa, brindando claridad y confianza durante todo el proceso.</p>
+                    <button class="botonWhite"><a href="/pages/contacto.html">¡Contactanos!</a></button>
+                </div>
+                
+            </div>
+        </section>
+
+        <section id="servicios" class="container bgWhite">
+            <h2 class="textBlack"> Nuestros servicios</h2>
+            <div id="servicios_cards" class="row row-cols-1 row-cols-sm-2 row-cols-md-4" >
+                <div class="col">
+                    <img src="./img/card_exterior.jpg">
+                    <p class="textRed">01</p>
+                    <h3>Exterior</h3>
+                </div>
+                <div class="col">
+                    <img src="./img/card_interior.jpg">
+                    <p class="textRed">02</p>
+                    <h3>Interior</h3>
+                </div>
+                <div class="col">
+                    <img src="./img/card_muebles.jpg">
+                    <p class="textRed">03</p>
+                    <h3>Muebles</h3>
+                </div>
+                <div class="col">
+                    <img src="./img/card_jardin.jpg">
+                    <p class="textRed">04</p>
+                    <h3>Jardines</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="container" id="porqueElegirnos">
+            <div id="intro-porqueElegirnos">
+                <h2>Por qué elegirnos?</h2>
+                <p class="textBlack">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, quidem? Distinctio voluptate incidunt accusamus reiciendis iste temporibus dolore earum consequuntur ex hic. Nemo voluptas, aliquid doloribus hic quod repellat delectus.</p>
+            </div>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2">
+                <article class="col motivo_card">
+                    <span class="numeroMotivo">1</span>
+                    <h3 class="col textBlack">Motivo Uno</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, quidem? Distinctio voluptate incidunt accusamus</p>
+                </article>
+                <article class="col motivo_card">
+                    <span class="numeroMotivo">2</span>
+                    <h3 class="textBlack">Motivo Dos</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, quidem? Distinctio voluptate incidunt accusamus</p>
+                </article>
+                <article class="col motivo_card">
+                    <span class="numeroMotivo">3</span>
+                    <h3 class="textBlack">Motivo tres</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, quidem? Distinctio voluptate incidunt accusamus</p>
+                </article>
+                <article class="col motivo_card">
+                    <span class="numeroMotivo">4</span>
+                    <h3 class="textBlack">Motivo Cuatro</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, quidem? Distinctio voluptate incidunt accusamus</p>
+                </article>
+            </div>
+        </article>
+
+
+
+        <!--Formulario-->
+        <section id="Formulario">
+            <h2>Transforma tu espacio. <span class="textWhite">¡Comienza aquí!</span></h2>
+            <form action="#" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+        
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required><br><br>
+        
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required><br><br>
+        
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+        
+                <label for="codigo_postal">Código Postal:</label>
+                <input type="text" id="codigo_postal" name="codigo_postal" required><br><br>
+        
+                <label for="tipo_servicio">Tipo de Servicio:</label>
+                <select id="tipo_servicio" name="tipo_servicio" required>
+                    <option value="interior">Interior</option>
+                    <option value="exterior">Exterior</option>
+                    <option value="jardin">Jardín</option>
+                    <option value="muebles">Muebles</option>
+                </select><br><br>
+                <label for="mensaje">Dejanos tu mensaje!</label>
+                    <textarea id="mensaje" name="mensaje"></textarea><br>
+                
+                <input class="botonForm" type="submit" value="Enviar">
+            </form>
+        </section>
+
+
+    </main>
+    <footer>
+        <div class="footer-cont1">
+            <img src="./img/if_logo.jpg" alt="logo_if">
+            <p>+34 123 456 890</p>
+            <a href="mailto:info@ifstudio.com">info@ifstudio.com</a>
+            <ul>
+                <li> Lunes-Viernes: 8am - 19pm</li>
+                <li> Sábado-Domingos: Cerrado</li>
+            </ul>
+            <ul class="rrss">
+                <li><a href="https://www.instagram.com/"><img src="./img/logo_instagram.png" width="40" alt="Logo instagram"></a></li>
+                <li><a href="https://facebook.com/"><img src="./img/logo_fb.png" alt="Logo facebook"width="40"></a></li>
+                <li><a href="https://www.linkedin.com/"><img src="./img/logo-in.png" alt="Logo linkedin"width="40"></a></li>
+            </ul>      
+        </div>
+        <div class="footer-cont2">
+            <ul>
+                <li>
+                    <a href="./pages/sobre-nosotros.html">Sobre nosotros</a>
+                </li>
+                <li>
+                    <a href="./pages/servicios.html">Servicios</a>
+                </li>
+                <li>
+                    <a href="./pages/portfolio.html">Porfolio</a>
+                </li>
+                <li>
+                    <a href="/pages/contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>    
+</body>
+</html>
