@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+            
     <!---CSS style--->
     <link rel="stylesheet" href="../style/style.css">
     
@@ -17,23 +19,31 @@
 </head>
 <body>
     <header>
-        <a href="../index.html"><img src="../img/if_logo.jpg" alt="logo_if"></a>
-        <nav>
-            <ul>
-                <li>
-                    <a href="../pages/sobre-nosotros.html">Sobre nosotros</a>
-                </li>
-                <li>
-                    <a href="../pages/servicios.html">Servicios</a>
-                </li>
-                <li>
-                    <a href="../pages/portfolio.html">Porfolio</a>
-                </li>
-                <li>
-                    <a href="../pages/contacto.html">Contacto</a>
-                </li>
-            </ul>
-            
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/index.html">
+                    <img src="/img/if_logo.jpg" alt="Logo" class="d-inline-block align-text-top">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="/pages/servicios.html">Servicios</a>
+                        </li>  
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/pages/portfolio.html">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/sobre-nosotros.html">Sobre nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/contacto.html">Contacto</a>
+                    </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
@@ -42,70 +52,95 @@
             <button class="botonWhite"><a href="./contacto.html">¡Contactanos!</a></button>
         </section>
         <section class="bgBlack">
-            <img src="../img/team-arq.jpg">
-            <div>
+            <div class="container" id="contenedorIntroNosotros">
+                <img class="imgServicio" src="../img/team-arq.jpg" />
+                <div class="contenedorTextoIntro">
                 <h2 class="textWhite">Tu visión, nuestro diseño</h2>
+                    <p class="textWhite">En if, somos un equipo apasionado y comprometido con la creación de espacios únicos que combinan funcionalidad, estética y confort. Con una sólida trayectoria en el campo de la arquitectura, reformas y diseño interior, trabajamos en estrecha colaboración con nuestros clientes para transformar sus ideas en realidad.</p>
 
-                <p class="textWhite">En if, somos un equipo apasionado y comprometido con la creación de espacios únicos que combinan funcionalidad, estética y confort. Con una sólida trayectoria en el campo de la arquitectura, reformas y diseño interior, trabajamos en estrecha colaboración con nuestros clientes para transformar sus ideas en realidad.</p>
-
-                <p class="textWhite">Cada proyecto es una nueva oportunidad para innovar, optimizar y adaptar los espacios a las necesidades y estilo de vida de quienes los habitan. Nos enfocamos en brindar soluciones personalizadas que no solo mejoren la calidad de vida de nuestros clientes, sino que también respeten el entorno y el contexto en el que se insertan.</p>               
+                    <p class="textWhite">Cada proyecto es una nueva oportunidad para innovar, optimizar y adaptar los espacios a las necesidades y estilo de vida de quienes los habitan. Nos enfocamos en brindar soluciones personalizadas que no solo mejoren la calidad de vida de nuestros clientes, sino que también respeten el entorno y el contexto en el que se insertan.</p>
+                </div>
             </div>
         </section>
-        <section class="bgWhite">
-            <div>
-                <div class="carditemTeam">
+        <section class="bgWhite container">
+            <div class="listaItems">
+                <div class="cardItemTeam">
                     <h3 class="textRed">Misión</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, quidem? Distinctio voluptate incidunt accusamus</p>
+                    <p>Diseñar espacios que mejoren la vida de las personas, combinando funcionalidad, estética y sensibilidad por el detalle. Nuestra misión es crear proyectos únicos, adaptados a cada necesidad, que respeten el entorno y reflejen la identidad de quienes los habitan. Buscamos transformar ideas en experiencias reales y duraderas.</p>
                 </div>
-                <div class="carditemTeam">
+                <div class="cardItemTeam">
                     <h3 class="textRed">Visión</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, quidem? Distinctio voluptate incidunt accusamus</p>
+                    <p>Ser un estudio de arquitectura referente por su enfoque humano, creativo y comprometido con la calidad. Queremos seguir creciendo junto a nuestros clientes, explorando nuevas formas de habitar, innovando en cada proyecto y generando un impacto positivo a través del diseño en la vida cotidiana.</p>
                 </div>
-                <div class="carditemTeam">
+                <div class="cardItemTeam">
                     <h3 class="textRed">Valores</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, quidem? Distinctio voluptate incidunt accusamus</p>
+                    <p>Creemos en la cercanía, la escucha activa y el diseño a medida. Valoramos el trabajo en equipo, la transparencia y el compromiso en cada etapa del proceso. Nos mueve la pasión por lo que hacemos y el deseo constante de ofrecer soluciones honestas, coherentes y con identidad propia.</p>
                 </div>
             </div>
         </section>
-        <section class="bgWhite">
+        <section class="bgWhite container">
             <h2>Nuestro equipo</h2>
-            <div>
+            <div class="teamPerfil">
                 <div>
-                    <img src="../img/juan_arq.jpg" alt="Juan Perez Arquitecto">
+                    <img src="../img/juan_arq.jpg" width="300" alt="Juan Perez Arquitecto">
                     <p class="textRed"><b>Juan Perez</b></p>
                     <p>Arquitecto</p>
                 </div>
                 <div>
-                    <img src="../img/ana_diseño.jpg" alt="Ana castillo Diseñadora">
+                    <img src="../img/ana_diseño.jpg" width="300" alt="Ana castillo Diseñadora">
                     <p class="textRed"><b>Ana Castillo</b></p>
                     <p>Diseñadora</p>
                 </div>
                 <div>
-                    <img src="../img/pedro-diseño.jpg" alt="Pedro Gomez Diseñador">
+                    <img src="../img/pedro-diseño.jpg" width="300"alt="Pedro Gomez Diseñador">
                     <p class="textRed"><b>Pedro Gomez</b></p>
                     <p>Diseñador</p>
                 </div>
             </div>
-            </div>
-            </div>
+        </section>
+        <!--Formulario-->
+        <section id="Formulario">
+            <h2>Transforma tu espacio. <span class="textWhite">¡Comienza aquí!</span></h2>
+            <form action="#" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+        
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required><br><br>
+        
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required><br><br>
+        
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+        
+                <label for="codigo_postal">Código Postal:</label>
+                <input type="text" id="codigo_postal" name="codigo_postal" required><br><br>
+        
+                <label for="tipo_servicio">Tipo de Servicio:</label>
+                <select id="tipo_servicio" name="tipo_servicio" required>
+                    <option value="interior">Interior</option>
+                    <option value="exterior">Exterior</option>
+                    <option value="jardin">Jardín</option>
+                    <option value="muebles">Muebles</option>
+                </select><br><br>
+                <label for="mensaje">Dejanos tu mensaje!</label>
+                    <textarea id="mensaje" name="mensaje"></textarea><br>
+                
+                <input class="botonForm" type="submit" value="Enviar">
+            </form>
         </section>
     </main>
     <footer>
-        <div class="footer-cont1">
+        <div class="footerContenedor1">
             <img src="../img/if_logo.jpg" alt="logo_if">
-            <p>+34 123 456 890</p>
-            <a href="mailto:info@ifstudio.com">info@ifstudio.com</a>
-            <ul>
-                <li> Lunes-Viernes: 8am - 19pm</li>
-                <li> Sábado-Domingos: Cerrado</li>
-            </ul>
             <ul class="rrss">
                 <li><a href="https://www.instagram.com/"><img src="../img/logo_instagram.png" width="40" alt="Logo instagram"></a></li>
                 <li><a href="https://facebook.com/"><img src="../img/logo_fb.png" alt="Logo facebook"width="40"></a></li>
                 <li><a href="https://www.linkedin.com/"><img src="../img/logo-in.png" alt="Logo linkedin"width="40"></a></li>
-            </ul>      
-        </div>
-        <div class="footer-cont2">
+            </ul>
+        </div>     
+        <div class="footerContenedor2">
             <ul>
                 <li>
                     <a href="../pages/sobre-nosotros.html">Sobre nosotros</a>
@@ -121,6 +156,17 @@
                 </li>
             </ul>
         </div>
-    </footer>    
+        <div class="footerContenedor3">
+            <p>+34 123 456 890</p>
+            <a href="mailto:info@ifstudio.com">info@ifstudio.com</a>
+            <ul>
+                <li> Lunes-Viernes: 8am - 19pm</li>
+                <li> Sábado-Domingos: Cerrado</li>
+            </ul>
+        </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>    
 </body>
 </html>

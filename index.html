@@ -21,58 +21,32 @@
 </head>
 <body>
     <header>
-        <a href="index.html"><img src="./img/if_logo.jpg" alt="logo_if"></a>
-        <nav>
-            <ul>
-                <li>
-                    <a href="./pages/sobre-nosotros.html">Sobre nosotros</a>
-                </li>
-                <li>
-                    <a href="./pages/servicios.html">Servicios</a>
-                </li>
-                <li>
-                    <a href="./pages/portfolio.html">Porfolio</a>
-                </li>
-                <li>
-                    <a href="./pages/contacto.html">Contacto</a>
-                </li>
-            </ul>
-            
-        </nav>
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="index.html">
                     <img src="./img/if_logo.jpg" alt="Logo" class="d-inline-block align-text-top">
                 </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="./pages/servicios.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Servicios
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Exterior</a></li>
-                            <li><a class="dropdown-item" href="#">Interior</a></li>
-                            <li><a class="dropdown-item" href="#">Muebles</a></li>
-                            <li><a class="dropdown-item" href="#">Jardines</a></li>
-                        </ul>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./pages/servicios.html">Servicios</a>
+                        </li>  
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./pages/portfolio.html">Proyectos</a>
                     </li>
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="./pages/portfolio.html">Proyectos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./pages/sobre-nosotros.html">Sobre nosotros</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./pages/contacto.html">Contacto</a>
-                  </li>
-                </ul>
-              </div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/sobre-nosotros.html">Sobre nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                    </li>
+                    </ul>
+                </div>
             </div>
-          </nav>
+        </nav>
     </header>
     
     <main>
@@ -82,9 +56,9 @@
         </section>
 
         <section class="bgBlack">
-            <div class="container">
-                <img class="img_intro" src="./img/impulso-creativo.jpg">
-                <div>
+            <div class="container" id="contenedorIntro">
+                <img class="imgIntro" src="./img/impulso-creativo.jpg">
+                <div class="contenedorTextoIntro">
                     <h2 class="textWhite">Un proceso creativo, participativo y transparente</h2>
                     <p class="textWhite">En nuestro proceso creativo, cada paso es una colaboración abierta y transparente. Trabajamos de la mano con nuestros clientes, fomentando la participación activa y asegurando que sus ideas sean escuchadas en todo momento. Creemos que la creatividad florece cuando se comparten perspectivas y se construye juntos, lo que nos permite ofrecer soluciones únicas y personalizadas. La transparencia es clave en cada etapa, brindando claridad y confianza durante todo el proceso.</p>
                     <button class="botonWhite"><a href="/pages/contacto.html">¡Contactanos!</a></button>
@@ -122,31 +96,31 @@
         <section class="container" id="porqueElegirnos">
             <div id="intro-porqueElegirnos">
                 <h2>Por qué elegirnos?</h2>
-                <p class="textBlack">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, quidem? Distinctio voluptate incidunt accusamus reiciendis iste temporibus dolore earum consequuntur ex hic. Nemo voluptas, aliquid doloribus hic quod repellat delectus.</p>
+                <p class="textBlack">Porque entendemos que cada proyecto es único y merece una solución a medida. No solo diseñamos espacios: creamos experiencias que combinan estética, funcionalidad y sensibilidad por el detalle. Trabajamos de forma cercana, escuchando tus ideas y transformándolas en resultados concretos, duraderos y con identidad propia. Nuestra mirada integral abarca desde el exterior hasta el último mueble, siempre buscando equilibrio entre diseño, comodidad y propósito. Nos apasiona lo que hacemos, y eso se nota en cada plano, cada material elegido y cada decisión tomada. Si buscás arquitectura con alma, compromiso y creatividad, somos el estudio indicado.</p>
             </div>
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2">
+            <div id="contenedorMotivos"class="row row-cols-1 row-cols-sm-2 row-cols-md-2">
                 <article class="col motivo_card">
                     <span class="numeroMotivo">1</span>
-                    <h3 class="col textBlack">Motivo Uno</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, quidem? Distinctio voluptate incidunt accusamus</p>
+                    <h3 class="col textBlack">Diseño personalizado</h3>
+                    <p>No trabajamos con fórmulas ni plantillas. Cada espacio que diseñamos parte de vos: tus ideas, tu estilo de vida y tus necesidades reales. Nuestro objetivo es que cada proyecto refleje tu identidad, con soluciones creativas y funcionales que se adapten perfectamente a vos. Diseño con sentido, pensado para durar.</p>
                 </article>
                 <article class="col motivo_card">
                     <span class="numeroMotivo">2</span>
-                    <h3 class="textBlack">Motivo Dos</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, quidem? Distinctio voluptate incidunt accusamus</p>
+                    <h3 class="textBlack">Visión integral</h3>
+                    <p>Creemos en el diseño como un todo. Por eso abordamos cada proyecto de forma integral: desde la arquitectura hasta los muebles y jardines. Esta mirada completa permite lograr coherencia visual, armonía espacial y un uso eficiente del entorno. Todo está conectado para que el resultado sea fluido, estético y funcional.</p>
                 </article>
                 <article class="col motivo_card">
                     <span class="numeroMotivo">3</span>
-                    <h3 class="textBlack">Motivo tres</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, quidem? Distinctio voluptate incidunt accusamus</p>
+                    <h3 class="textBlack">Acompañamiento cercano</h3>
+                    <p>Nos involucramos de principio a fin. Escuchamos, proponemos y resolvemos junto a vos, con una comunicación clara y fluida en cada etapa. Queremos que disfrutes del proceso tanto como del resultado. Estás en buenas manos: somos un equipo comprometido, accesible y siempre presente cuando más lo necesitás.</p>
                 </article>
                 <article class="col motivo_card">
                     <span class="numeroMotivo">4</span>
-                    <h3 class="textBlack">Motivo Cuatro</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, quidem? Distinctio voluptate incidunt accusamus</p>
+                    <h3 class="textBlack">Compromiso con la calidad</h3>
+                    <p>Cada elección importa. Por eso trabajamos con materiales de calidad, proveedores confiables y soluciones que combinan durabilidad y diseño. Cuidamos cada detalle para que el resultado sea sólido, estético y funcional. No hacemos las cosas a medias: buscamos excelencia en cada paso, porque tu espacio lo merece.</p>
                 </article>
             </div>
-        </article>
+        </section>
 
 
 
@@ -186,21 +160,15 @@
 
     </main>
     <footer>
-        <div class="footer-cont1">
+        <div class="footerContenedor1">
             <img src="./img/if_logo.jpg" alt="logo_if">
-            <p>+34 123 456 890</p>
-            <a href="mailto:info@ifstudio.com">info@ifstudio.com</a>
-            <ul>
-                <li> Lunes-Viernes: 8am - 19pm</li>
-                <li> Sábado-Domingos: Cerrado</li>
-            </ul>
             <ul class="rrss">
                 <li><a href="https://www.instagram.com/"><img src="./img/logo_instagram.png" width="40" alt="Logo instagram"></a></li>
                 <li><a href="https://facebook.com/"><img src="./img/logo_fb.png" alt="Logo facebook"width="40"></a></li>
                 <li><a href="https://www.linkedin.com/"><img src="./img/logo-in.png" alt="Logo linkedin"width="40"></a></li>
-            </ul>      
-        </div>
-        <div class="footer-cont2">
+            </ul>
+        </div>     
+        <div class="footerContenedor2">
             <ul>
                 <li>
                     <a href="./pages/sobre-nosotros.html">Sobre nosotros</a>
@@ -215,6 +183,15 @@
                     <a href="/pages/contacto.html">Contacto</a>
                 </li>
             </ul>
+        </div>
+        <div class="footerContenedor3">
+            <p>+34 123 456 890</p>
+            <a href="mailto:info@ifstudio.com">info@ifstudio.com</a>
+            <ul>
+                <li> Lunes-Viernes: 8am - 19pm</li>
+                <li> Sábado-Domingos: Cerrado</li>
+            </ul>
+        </div>
         </div>
     </footer>
     

@@ -82,6 +82,8 @@ body {
 header{
     background-color: var(--main-color);
     padding: 1% 5%;
+    position:fixed;
+    width: 100%;
 }
 
 .navbar{
@@ -92,12 +94,15 @@ header{
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
     color: #FFFFFF !important;
 }
+.navbar-nav:hover {
+    --bs-nav-link-hover-color: var(--main-color-secondary);
+}
 a{
     text-decoration: none;
 }
 
 a:link {color: var(--main-text-color-light); text-decoration: none }
-a:hover {color:var(--main-text-color-light); text-decoration: none }
+a:hover {color:var(--main-color-secondary); text-decoration: none }
 a:visited {color:var(--main-text-color-light); text-decoration: none }
 
 ul{
@@ -110,7 +115,10 @@ ul{
 p{
     margin:0px !important;
 }
-
+button.navbar-toggler {
+    background-color: white !important;
+    padding: 10px;
+}
 
 
 /*Footer*/
@@ -119,10 +127,13 @@ footer{
     background-color: var(--main-color);
     color: var(--main-text-color-light);
     padding: 2% 5%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .rrss{
-    padding: 10px 0px
+    display:flex;
 }
 
 /*PAGES*/
@@ -130,7 +141,7 @@ footer{
 #heroHome{
     background-image: url(../img/hero_design.jpg);
     background-repeat: no-repeat;
-    height: 650px;
+    height: 100vh;
     background-size: cover;
     background-position: bottom;
     text-align: left;
@@ -139,6 +150,7 @@ footer{
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    padding-top: 150px;
 }
 
 
@@ -185,13 +197,24 @@ h3{
 #servicios{
     background-color: var(--main-text-color-light);
 }
+div#contenedorIntro {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+img.imgIntro {
+    padding-right: 50px;
+}
 
 /*Motivos*/
 #porqueElegirnos{
-    padding:100px 0px;
+    padding-bottom: 100px;
 }
 
-
+.motivo_card{
+    padding:50px;
+}
 .numeroMotivo{
     font-size: 60px;
     font-weight: 900;
@@ -207,6 +230,10 @@ input, select,textarea{
     border-bottom: 2px solid #ffffff;
     background-color: rgba(0, 0, 0, 0);
     color: var(--main-text-color-light);
+}
+
+label{
+    color:var(--main-bg-color-light);
 }
 option {
     color: var(--main-color);
@@ -225,12 +252,17 @@ option {
 #Formulario form {
     text-align: left;
     width: 50%;
-    margin:0 auto;
+    margin: 0 auto;
+    padding-left: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
 }
+
 /*SERVICIOS*/
 #heroServicios{
     background-image: url(../img/bgDark.jpg);
-    height: 400px;
+    height: 85vh;
     padding: 100px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -240,12 +272,23 @@ option {
 .titleServicios{
     font-size: 3.5em;
     color: var(--main-text-color-light);
-    width: 600px;
     padding-bottom:20px;
+    padding-top: 30vh;
 }
 #servicios_cards{
     margin-top: 50px;
 }
+
+div#contenedorIntroServicios {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.imgServicio {
+    padding-right: 50px;
+}
+
 
 /*CTA*/
 #cta{
@@ -267,14 +310,22 @@ option {
 /*PORFOLIO*/
 #heroPortfolio{
     background-image: url(../img/proyectos-hero.jpg);
-    height: 400px;
+    height: 85vh;
     padding: 100px;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: bottom;
+    background-position: center;
 }   
+
+#cardsProyectos{
+    display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+}
+
 .cardSinglePorfolio{
-    width: 500px;
+    width: 400px;
 }
 .cardSinglePorfolioInformation{
     text-align: left;
@@ -287,13 +338,16 @@ option {
 /*Form Contacto*/
 #formDark {
     color: var(--main-text-color-light);
-    padding:50px 100px;
+    height: 100vh;
+    padding-top: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     text-align: center;
-    width: 100%; 
 }
 
 #formDark form{
-    width: 50%; 
+    width: 60%; 
     margin: 0 auto; 
 }
 
@@ -302,19 +356,281 @@ iframe {
     width: 100%;
 }
 /*SOBRE-NOSOTROS*/
-
-.carditemTeam{
+div#contenedorIntroNosotros {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.cardItemTeam{
     padding: 20px;
     border-top: 1px solid var(--border);
-    width: 33%;
+    width: 30%;
+    padding-right: 30px;
+}
 
+.listaItems{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 #heroTeam{
     background-image: url(../img/team-office.jpg);
-    height: 400px;
+    height: 85vh;
     padding: 100px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-}   
+}
+
+.teamPerfil{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/*MEDIAQUERYS*/
+
+@media (max-width: 430px) {
+
+
+    #heroHome{
+        padding:500px 20px;
+    }
+    .titleHome {
+        font-size: 45px;
+        padding-top:150px;
+        width: 90%;
+    }
+    div#contenedorIntro  {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    img.imgIntro {
+        padding-right: 0;
+        width: 100%;
+    }
+    .bgBlack {
+        padding: 50px 0px 50px 0px;
+    }
+
+    /*SERVICIO*/
+
+    div#\#contenedorIntroServicios {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    #servicios img{
+        width:100%;
+    }
+    .motivo_card {
+        padding: 20px;
+    }
+    #Formulario form {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-content: stretch;
+        align-items: stretch;
+        padding: 20px;
+    }
+    .textRed {
+        font-size: 4px;
+    }
+    div#servicios_cards img {
+        width: 100%;
+    }
+    /*PROYECTOS*/
+    #cardsProyectos {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    #contenedorProyectosTexto{
+        padding:20px;
+    }
+    #heroPortfolio{
+        padding: 50px;
+    }
+    /*NOSOTROS*/
+    div#contenedorIntroNosotros {
+        display: flex;
+        flex-direction: column !important;
+        align-items: center;
+    }
+
+    #heroTeam{
+        padding:50px;
+    }
+
+    .listaItems {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .cardItemTeam {
+        padding: 20px;
+        border-top: 1px solid var(--border);
+        width: 100%;
+        /* padding-right: 30px; */
+    }
+    .teamPerfil {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+    /*FOOTER*/
+    footer {
+        background-color: var(--main-color);
+        color: var(--main-text-color-light);
+        padding: 2% 5%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        padding: 40px 0px;
+    }
+    .footerContenedor21 {
+        text-align: center;
+        padding-bottom: 30px;
+    }
+    .footerContenedor2 {
+        text-align: center;
+        padding-bottom: 30px;
+    }
+    .footerContenedor3 {
+        text-align: center;
+        padding-bottom: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    /*HOME*/
+
+    #heroHome{
+        padding:500px 20px;
+    }
+    .titleHome {
+        font-size: 45px;
+        padding-top:150px;
+        width: 90%;
+    }
+
+    div#contenedorIntro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .contenedorTextoIntro {
+        padding-top: 50px;
+    }
+    .bgBlack {
+        padding: 50px 0px 50px 0px;
+    }
+    img.imgIntro {
+        padding: 0;
+    }
+    #Formulario form {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-content: stretch;
+        align-items: stretch;
+        padding: 20px;
+    }
+    .textRed {
+        font-size: 40px;
+    }
+
+    /*SERVICIOS*/
+    div#contenedorIntroServicios {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    div#servicios_cards img {
+        width: 100%;
+    }
+    .imgServicio{
+        width: 100%;
+        padding:0;
+    }
+    .motivo_card {
+        padding: 20px;
+    }
+    
+    #cta {
+        background-color: var(--main-color);
+        padding: 40px;
+        color: var(--main-text-color-light);
+    }
+    #cta p {
+        font-size: 30px;
+        padding-bottom: 25px;
+    }
+    /*PROYECTOS*/
+    #cardsProyectos {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    #heroPortfolio{
+        padding: 50px;
+    }
+    #contenedorProyectosTexto{
+        padding-top:50px;
+    }
+
+    /*NOSOTROS*/
+    div#contenedorIntroNosotros {
+        display: flex;
+        flex-direction: column !important;
+        align-items: center;
+    }
+    .teamPerfil {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+    /*FOOTER*/
+    footer {
+        background-color: var(--main-color);
+        color: var(--main-text-color-light);
+        padding: 2% 5%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        padding: 40px 0px;
+    }
+    .footerContenedor1 {
+        text-align: center;
+        padding-bottom: 30px;
+    }
+    .footerContenedor2 {
+        text-align: center;
+        padding-bottom: 30px;
+    }
+    .footerContenedor3 {
+        text-align: center;
+        padding-bottom: 30px;
+    }
+}
