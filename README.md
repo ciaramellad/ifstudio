@@ -1,7 +1,6 @@
 ## 🧱 Sobre IFSTUDIO
 
-**IF** es un estudio de arquitectura ubicado en Barcelona, con una visión minimalista y moderna. Representa nuestra identidad visual y profesional, enfocada en la claridad, la simplicidad y la elegancia.
-
+IF Studio es un estudio de arquitectura especializado en el diseño moderno y minimalista de interiores, exteriores, muebles y jardines. Se enfoca en la creación de espacios funcionales y elegantes, detalles simples y estilo contemporáneo. 
 Ofrece servicios especializados en:
 
 - Diseño exterior
