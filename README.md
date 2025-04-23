@@ -19,5 +19,4 @@ Ofrece servicios especializados en:
 
 ## 💻 Enlace
 
-https://github.com/ciaramellad/ifstudio.git
-
+https://ciaramellad.github.io/ifstudio/
