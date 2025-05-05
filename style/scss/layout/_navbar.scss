@@ -1,8 +1,8 @@
-@use "../abstracts/variables";
+@use "../abstracts/variables" as variables;
 
 .navbar{
     --bs-bg-opacity: 1;
-    background-color: $mainColor;
+    background-color: variables.$mainColor;
     color:#FFFFFF;
 
     .nav-link.active, .navbar-nav .nav-link.show {
@@ -10,7 +10,7 @@
     }
     
     .nav-link:hover {
-        color: $mainColor-secondary;
+        color: variables.$mainColor-secondary;
     }
 }
 

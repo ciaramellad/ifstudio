@@ -1,18 +1,617 @@
-/* Error: Undefined variable.
- *   ,
- * 4 |     border: 1px solid $mainColor;
- *   |                       ^^^^^^^^^^
- *   '
- *   style\scss\components\_button.scss 4:23  @use
- *   style\scss\main.scss 4:1                 root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a   \2577 \a 4 \2502      border: 1px solid $mainColor;\d\a   \2502                        ^^^^^^^^^^\a   \2575 \a   style\\scss\\components\\_button.scss 4:23  @use\a   style\\scss\\main.scss 4:1                 root stylesheet";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter Tight", sans-serif;
 }
+
+body {
+  font-family: "Inter Tight", sans-serif;
+}
+
+.botonBlack {
+  border: 1px solid #121212;
+  padding: 10px 20px;
+  border-radius: 100px;
+  color: #121212;
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 18px;
+}
+.botonBlack:hover {
+  color: #ebebeb;
+  background-color: #D94D20;
+  border: none;
+}
+
+.botonWhite {
+  border: 1px solid #FFFFFF;
+  padding: 10px 20px;
+  border-radius: 100px;
+  color: #FFFFFF;
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 18px;
+}
+.botonWhite:hover {
+  color: #121212;
+  background-color: #D94D20;
+  border: none;
+}
+
+.botonForm {
+  border: 1px solid #FFFFFF;
+  border-radius: 100px;
+  color: #FFFFFF;
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 10px 25px;
+  margin-top: 30px;
+}
+.botonForm:hover {
+  color: #ebebeb;
+  background-color: #D94D20;
+  border: none;
+}
+
+button.navbar-toggler {
+  background-color: white !important;
+  padding: 10px;
+}
+
+#cta {
+  background-color: #121212;
+  padding: 100px;
+  color: #FFFFFF;
+}
+#cta p {
+  font-size: 40px;
+}
+
+.faqSingle {
+  padding: 40px 0;
+  border-bottom: 1px solid #838383;
+}
+
+input, select, textarea {
+  border-radius: 0;
+  padding: 3px;
+  border: 0px;
+  margin-left: 5px;
+  border-bottom: 2px solid #ffffff;
+  background-color: rgba(0, 0, 0, 0);
+  color: #FFFFFF;
+}
+
+label {
+  color: #ebebeb;
+}
+
+option {
+  color: #121212;
+}
+
+#Formulario {
+  background-image: url("../../img/bgDark.jpg");
+  padding: 100px 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  width: 100%;
+  text-align: center;
+}
+#Formulario form {
+  text-align: left;
+  width: 50%;
+  margin: 0 auto;
+  padding-left: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+#formDark {
+  padding: 200px 20px 50px 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  background-color: #121212;
+}
+#formDark form {
+  width: 60%;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+a:link {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+a:hover {
+  color: #D94D20;
+  text-decoration: none;
+}
+a:visited {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  color: #FFFFFF;
+  padding: 0;
+  margin: 0;
+}
+
+.titleHome {
+  font-size: 50px;
+  color: #ebebeb;
+  padding-bottom: 20px;
+  width: 50%;
+}
+
+h2 {
+  font-size: 40px;
+  padding-bottom: 20px;
+}
+
+h3 {
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+
+#porqueElegirnos {
+  padding-bottom: 100px;
+}
+#porqueElegirnos .motivo_card {
+  padding: 50px;
+}
+#porqueElegirnos .numeroMotivo {
+  font-size: 60px;
+  font-weight: 900;
+  color: #D94D20;
+}
+
+body {
+  background: #FFFFFF;
+}
+
+footer {
+  background-color: #121212;
+  color: #FFFFFF;
+  padding: 2% 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .rrss {
+  display: flex;
+}
+
+header {
+  background-color: #121212;
+  padding: 1% 5%;
+  position: fixed;
+  width: 100%;
+  z-index: 999 !important;
+}
+
+.navbar {
+  --bs-bg-opacity: 1;
+  background-color: #121212;
+  color: #FFFFFF;
+}
+.navbar .nav-link.active, .navbar .navbar-nav .nav-link.show {
+  color: #FFFFFF !important;
+}
+.navbar .nav-link:hover {
+  color: #D94D20;
+}
+
+iframe {
+  height: 300px;
+  width: 100%;
+}
+
+#heroHome {
+  background-image: url("../../img/bgDark.jpg");
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-size: cover;
+  background-position: bottom;
+  text-align: left;
+  padding: 0px 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 150px;
+}
+
+.textWhite {
+  color: #FFFFFF;
+  padding-bottom: 20px;
+}
+
+.textBlack {
+  color: #121212;
+  padding-bottom: 20px;
+}
+
+.textRed {
+  color: #D94D20;
+}
+
+.bgBlack {
+  background-color: #121212;
+  padding: 100px 0px;
+}
+
+.bgWhite {
+  background-color: #FFFFFF;
+  padding: 100px 0px;
+}
+
+#servicios {
+  background-color: #FFFFFF;
+}
+
+div#contenedorIntro {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+img.imgIntro {
+  padding-right: 50px;
+}
+
+#heroPortfolio {
+  background-image: url(../../img/proyectos-hero.jpg);
+  height: 85vh;
+  padding: 100px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#cardsProyectos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.cardSinglePorfolio {
+  width: 400px;
+}
+
+.cardSinglePorfolioInformation {
+  text-align: left;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#heroServicios {
+  background-image: url(../../img/bgDark.jpg);
+  height: 85vh;
+  padding: 100px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.titleServicios {
+  font-size: 3.5em;
+  color: #FFFFFF;
+  padding-bottom: 20px;
+  padding-top: 30vh;
+}
+
+#servicios_cards {
+  margin-top: 50px;
+}
+
+div#contenedorIntroServicios {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.imgServicio {
+  padding-right: 50px;
+}
+
+div#contenedorIntroNosotros {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.cardItemTeam {
+  padding: 20px;
+  border-top: 1px solid #838383;
+  width: 30%;
+  padding-right: 30px;
+}
+
+.listaItems {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#heroTeam {
+  background-image: url(../../img/team-office.jpg);
+  height: 85vh;
+  padding: 100px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.teamPerfil {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 430px) {
+  #heroHome {
+    padding: 100px 20px;
+    height: 90vp;
+  }
+  .titleHome {
+    font-size: 45px;
+    padding-top: 100px;
+    width: 100% !important;
+  }
+  div#contenedorIntro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  img.imgIntro {
+    padding-right: 0;
+    width: 100%;
+  }
+  .bgBlack {
+    padding: 50px 0px 50px 0px;
+  }
+  /*SERVICIO*/
+  #heroServicios {
+    padding: 20px;
+    text-align: center;
+  }
+  div#\#contenedorIntroServicios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  #servicios {
+    padding: 50px 20px;
+  }
+  #servicios img {
+    width: 100%;
+  }
+  .motivo_card {
+    padding: 20px;
+  }
+  #Formulario form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    align-items: stretch;
+    padding: 20px;
+  }
+  .textRed {
+    font-size: 4px;
+  }
+  div#servicios_cards img {
+    width: 100%;
+  }
+  #faqs {
+    padding: 50px 20px;
+  }
+  /*PROYECTOS*/
+  #cardsProyectos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  #contenedorProyectosTexto {
+    padding: 20px;
+  }
+  #heroPortfolio {
+    padding: 50px;
+    text-align: center;
+  }
+  /*NOSOTROS*/
+  div#contenedorIntroNosotros {
+    display: flex;
+    flex-direction: column !important;
+    align-items: center;
+  }
+  #heroTeam {
+    padding: 50px;
+    text-align: center;
+  }
+  .listaItems {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .cardItemTeam {
+    padding: 20px;
+    border-top: 1px solid #838383;
+    width: 100%;
+  }
+  .teamPerfil {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  /*CONTACTO*/
+  #formDark form {
+    width: 100%;
+    /* margin: 0 auto; */
+  }
+  /*FOOTER*/
+  footer {
+    background-color: #121212;
+    color: #FFFFFF;
+    padding: 2% 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 0px;
+  }
+  .footerContenedor21 {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  .footerContenedor2 {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  .footerContenedor3 {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+}
+@media (max-width: 768px) {
+  /*HOME*/
+  #heroHome {
+    padding: 250px 20px;
+  }
+  .titleHome {
+    font-size: 45px;
+    padding-top: 100px;
+    width: 90%;
+  }
+  div#contenedorIntro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .contenedorTextoIntro {
+    padding-top: 50px;
+  }
+  .bgBlack {
+    padding: 50px 0px 50px 0px;
+  }
+  img.imgIntro {
+    padding: 0;
+    width: 100%;
+  }
+  #Formulario form {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    align-items: stretch;
+    padding: 20px;
+  }
+  .textRed {
+    font-size: 40px;
+  }
+  /*SERVICIOS*/
+  div#contenedorIntroServicios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  div#servicios_cards img {
+    width: 100%;
+  }
+  .imgServicio {
+    width: 100%;
+    padding: 0;
+  }
+  .motivo_card {
+    padding: 20px !important;
+  }
+  .cardItemTeam {
+    padding: 10px;
+  }
+  #cta {
+    background-color: #121212;
+    padding: 40px;
+    color: #FFFFFF;
+  }
+  #cta p {
+    font-size: 30px;
+    padding-bottom: 25px;
+  }
+  /*PROYECTOS*/
+  #cardsProyectos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  #heroPortfolio {
+    padding: 50px;
+  }
+  #contenedorProyectosTexto {
+    padding-top: 50px;
+  }
+  /*NOSOTROS*/
+  div#contenedorIntroNosotros {
+    display: flex;
+    flex-direction: column !important;
+    align-items: center;
+  }
+  .teamPerfil {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .equipoTitle {
+    text-align: center;
+  }
+  /*FOOTER*/
+  footer {
+    background-color: #121212;
+    color: #FFFFFF;
+    padding: 2% 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 0px;
+  }
+  .footerContenedor1 {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  .footerContenedor2 {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  .footerContenedor3 {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

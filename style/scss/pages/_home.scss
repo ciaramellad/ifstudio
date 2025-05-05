@@ -1,4 +1,4 @@
-@use "../abstracts/variables";
+@use "../abstracts/variables" as variables;
 
 #heroHome{
     background-image: url("../../img/bgDark.jpg");
@@ -16,29 +16,29 @@
 }
 
 .textWhite{
-    color:$mainTextColor-light;
+    color:variables.$mainTextColor-light;
     padding-bottom: 20px;
 }
 .textBlack{
-    color: $mainColor;
+    color: variables.$mainColor;
     padding-bottom: 20px;
 }
 
 .textRed{
-    color:$mainColor-secondary;
+    color:variables.$mainColor-secondary;
 }
 .bgBlack{
-    background-color: $mainColor;
+    background-color: variables.$mainColor;
     padding:100px 0px;
 }
 
 .bgWhite{
-    background-color: $mainTextColor-light;
+    background-color: variables.$mainTextColor-light;
     padding:100px 0px;
 }
 
 #servicios{
-    background-color: $mainTextColor-light;
+    background-color: variables.$mainTextColor-light;
 }
 div#contenedorIntro {
     display: flex;

@@ -1,8 +1,8 @@
-@use "../abstracts/variables";
+@use "../abstracts/variables" as variables;
 
 footer{
-    background-color: $mainColor;
-    color: $mainTextColor-light;
+    background-color: variables.$mainColor;
+    color: variables.$mainTextColor-light;
     padding: 2% 5%;
     display:flex;
     justify-content: space-between;

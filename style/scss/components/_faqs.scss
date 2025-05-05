@@ -1,7 +1,7 @@
-@import "../abstracts/variables";
+@use "../abstracts/variables" as variables;
 
 
 .faqSingle{
     padding: 40px 0;
-    border-bottom: 1px solid $border;
+    border-bottom: 1px solid variables.$border;
 }

@@ -1,7 +1,7 @@
-@use "../abstracts/variables";
+@use "../abstracts/variables" as variables;
 
 header{
-    background-color: $mainColor;
+    background-color: variables.$mainColor;
     padding: 1% 5%;
     position:fixed;
     width: 100%;

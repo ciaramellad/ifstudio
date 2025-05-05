@@ -1,9 +1,9 @@
-@import "../abstracts/variables";
+@use "../abstracts/variables" as variables;
 
 #cta{
-    background-color: $mainColor;
+    background-color: variables.$mainColor;
     padding: 100px;
-    color:$mainTextColor-light;
+    color:variables.$mainTextColor-light;
     
     p {
         font-size: 40px;

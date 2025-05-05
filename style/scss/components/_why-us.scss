@@ -1,4 +1,4 @@
-@import "../abstracts/variables";
+@use "../abstracts/variables" as variables;
 
 #porqueElegirnos{
     padding-bottom: 100px;
@@ -9,6 +9,6 @@
     .numeroMotivo{
         font-size: 60px;
         font-weight: 900;
-        color: $mainColor-secondary;
+        color: variables.$mainColor-secondary;
     }
 }

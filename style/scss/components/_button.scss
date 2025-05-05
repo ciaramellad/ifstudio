@@ -1,42 +1,42 @@
-@use "../abstracts/variables";
+@use "../abstracts/variables" as variables;
 
 .botonBlack{
-    border: 1px solid $mainColor;
+    border: 1px solid variables.$mainColor;
     padding:10px 20px;
     border-radius: 100px;
-    color: $mainColor;
+    color: variables.$mainColor;
     background-color: transparent;
     font-weight:600;
     font-size: 18px;
 
     &:hover{
-        color: $mainBgColor-light;
-        background-color: $mainColor-secondary;
+        color: variables.$mainBgColor-light;
+        background-color: variables.$mainColor-secondary;
         border:none;
     }
 }
 
 .botonWhite{
-    border: 1px solid $mainTextColor-light;
+    border: 1px solid variables.$mainTextColor-light;
     padding:10px 20px;
     border-radius: 100px;
-    color: $mainTextColor-light;
+    color: variables.$mainTextColor-light;
     background-color: transparent;
     font-weight:600;
     font-size: 18px;
 
     &:hover{
-        color: $mainColor;
-        background-color: $mainColor-secondary;
+        color: variables.$mainColor;
+        background-color: variables.$mainColor-secondary;
         border:none;
     }
 }
 
 
 .botonForm{
-    border: 1px solid $mainTextColor-light;
+    border: 1px solid variables.$mainTextColor-light;
     border-radius: 100px;
-    color: $mainTextColor-light;
+    color: variables.$mainTextColor-light;
     background-color: transparent;
     font-weight:600;
     font-size: 16px;
@@ -44,8 +44,8 @@
     margin-top: 30px;
     
     &:hover{
-        color: $mainBgColor-light;
-        background-color: $mainColor-secondary;
+        color: variables.$mainBgColor-light;
+        background-color: variables.$mainColor-secondary;
         border:none;
     }
 }

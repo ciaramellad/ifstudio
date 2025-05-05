@@ -1,20 +1,20 @@
-@import "../abstracts/variables";
+@use "../abstracts/variables" as variables;
 
 a {
     text-decoration: none;
   
     &:link {
-      color: $mainTextColor-light;
+      color: variables.$mainTextColor-light;
       text-decoration: none;
     }
   
     &:hover {
-      color: $mainColor-secondary;
+      color: variables.$mainColor-secondary;
       text-decoration: none;
     }
   
     &:visited {
-      color: $mainTextColor-light;
+      color: variables.$mainTextColor-light;
       text-decoration: none;
     }
   }

@@ -1,5 +1,5 @@
-@use "../abstracts/variables";
+@use "../abstracts/variables" as variables;
 
 body {
-    background: $mainTextColor-light;
+    background: variables.$mainTextColor-light;
 }
