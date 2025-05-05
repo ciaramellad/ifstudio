@@ -1,0 +1,51 @@
+@use "../abstracts/variables";
+
+#heroHome{
+    background-image: url("../../img/bgDark.jpg");
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+    background-position: bottom;
+    text-align: left;
+    padding: 0px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 150px;
+}
+
+.textWhite{
+    color:$mainTextColor-light;
+    padding-bottom: 20px;
+}
+.textBlack{
+    color: $mainColor;
+    padding-bottom: 20px;
+}
+
+.textRed{
+    color:$mainColor-secondary;
+}
+.bgBlack{
+    background-color: $mainColor;
+    padding:100px 0px;
+}
+
+.bgWhite{
+    background-color: $mainTextColor-light;
+    padding:100px 0px;
+}
+
+#servicios{
+    background-color: $mainTextColor-light;
+}
+div#contenedorIntro {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+img.imgIntro {
+    padding-right: 50px;
+}

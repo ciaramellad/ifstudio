@@ -1,0 +1,27 @@
+@use "../abstracts/variables";
+
+#heroPortfolio{
+    background-image: url(../../img/proyectos-hero.jpg);
+    height: 85vh;
+    padding: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}   
+
+#cardsProyectos{
+    display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+}
+
+.cardSinglePorfolio{
+    width: 400px;
+}
+.cardSinglePorfolioInformation{
+    text-align: left;
+    padding: 20px;
+    display:flex;
+    justify-content: space-between;
+}

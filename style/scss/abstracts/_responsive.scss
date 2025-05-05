@@ -1,0 +1,273 @@
+@use "../abstracts/variables";
+
+@media (max-width: 430px) {
+
+
+    #heroHome{
+        padding:100px 20px;
+        height: 90vp;
+    }
+    .titleHome {
+        font-size: 45px;
+        padding-top:100px;
+        width: 100%!important;
+    }
+    div#contenedorIntro  {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    img.imgIntro {
+        padding-right: 0;
+        width: 100%;
+    }
+    .bgBlack {
+        padding: 50px 0px 50px 0px;
+    }
+
+    /*SERVICIO*/
+    #heroServicios{
+        padding:20px;
+        text-align: center;
+    }
+    div#\#contenedorIntroServicios {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    #servicios{
+        padding:50px 20px;
+    }
+    #servicios img{
+        width:100%;
+    }
+    .motivo_card {
+        padding: 20px;
+    }
+    #Formulario form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-content: stretch;
+        align-items: stretch;
+        padding: 20px;
+    }
+    .textRed {
+        font-size: 4px;
+    }
+    div#servicios_cards img {
+        width: 100%;
+    }
+
+    #faqs{
+        padding:50px 20px;
+    }
+    /*PROYECTOS*/
+    #cardsProyectos {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    #contenedorProyectosTexto{
+        padding:20px;
+    }
+    #heroPortfolio{
+        padding: 50px;
+        text-align: center;
+    }
+    /*NOSOTROS*/
+    div#contenedorIntroNosotros {
+        display: flex;
+        flex-direction: column !important;
+        align-items: center;
+    }
+
+    #heroTeam{
+        padding:50px;
+        text-align: center;
+    }
+
+    .listaItems {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .cardItemTeam {
+        padding: 20px;
+        border-top: 1px solid $border;
+        width: 100%;
+    }
+    .teamPerfil {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /*CONTACTO*/
+    #formDark form {
+        width: 100%;
+        /* margin: 0 auto; */
+    }
+
+    /*FOOTER*/
+    footer {
+        background-color: $mainColor;
+        color: $mainTextColor-light;
+        padding: 2% 5%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        padding: 40px 0px;
+    }
+    .footerContenedor21 {
+        text-align: center;
+        padding-bottom: 30px;
+    }
+    .footerContenedor2 {
+        text-align: center;
+        padding-bottom: 30px;
+    }
+    .footerContenedor3 {
+        text-align: center;
+        padding-bottom: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    /*HOME*/
+
+    #heroHome{
+        padding:250px 20px;
+    }
+    .titleHome {
+        font-size: 45px;
+        padding-top:100px;
+        width: 90%;
+    }
+
+    div#contenedorIntro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .contenedorTextoIntro {
+        padding-top: 50px;
+    }
+    .bgBlack {
+        padding: 50px 0px 50px 0px;
+    }
+    img.imgIntro {
+        padding: 0;
+        width: 100%;
+    }
+    #Formulario form {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-content: stretch;
+        align-items: stretch;
+        padding: 20px;
+    }
+    .textRed {
+        font-size: 40px;
+    }
+
+    /*SERVICIOS*/
+    div#contenedorIntroServicios {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    div#servicios_cards img {
+        width: 100%;
+    }
+    .imgServicio{
+        width: 100%;
+        padding:0;
+    }
+    .motivo_card {
+        padding: 20px !important;
+    }
+    .cardItemTeam {
+        padding: 10px;
+    }
+    
+    #cta {
+        background-color: $mainColor;
+        padding: 40px;
+        color: $mainTextColor-light;
+    }
+    #cta p {
+        font-size: 30px;
+        padding-bottom: 25px;
+    }
+    /*PROYECTOS*/
+    #cardsProyectos {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    #heroPortfolio{
+        padding: 50px;
+    }
+    #contenedorProyectosTexto{
+        padding-top:50px;
+    }
+
+    /*NOSOTROS*/
+    div#contenedorIntroNosotros {
+        display: flex;
+        flex-direction: column !important;
+        align-items: center;
+    }
+    .teamPerfil {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .equipoTitle{
+        text-align: center;
+    }
+
+    /*FOOTER*/
+    footer {
+        background-color: $mainColor;
+        color: $mainTextColor-light;
+        padding: 2% 5%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        padding: 40px 0px;
+    }
+    .footerContenedor1 {
+        text-align: center;
+        padding-bottom: 30px;
+    }
+    .footerContenedor2 {
+        text-align: center;
+        padding-bottom: 30px;
+    }
+    .footerContenedor3 {
+        text-align: center;
+        padding-bottom: 30px;
+    }
+}

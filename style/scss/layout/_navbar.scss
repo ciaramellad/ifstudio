@@ -1,0 +1,16 @@
+@use "../abstracts/variables";
+
+.navbar{
+    --bs-bg-opacity: 1;
+    background-color: $mainColor;
+    color:#FFFFFF;
+
+    .nav-link.active, .navbar-nav .nav-link.show {
+        color: #FFFFFF !important;
+    }
+    
+    .nav-link:hover {
+        color: $mainColor-secondary;
+    }
+}
+

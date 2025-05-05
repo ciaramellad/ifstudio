@@ -1,0 +1,20 @@
+@import "../abstracts/variables";
+
+a {
+    text-decoration: none;
+  
+    &:link {
+      color: $mainTextColor-light;
+      text-decoration: none;
+    }
+  
+    &:hover {
+      color: $mainColor-secondary;
+      text-decoration: none;
+    }
+  
+    &:visited {
+      color: $mainTextColor-light;
+      text-decoration: none;
+    }
+  }

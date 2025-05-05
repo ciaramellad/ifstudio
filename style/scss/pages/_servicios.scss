@@ -1,0 +1,28 @@
+@import "../abstracts/variables";
+
+
+
+#heroServicios {
+    @include background-cover("../../img/bgDark.jpg");
+    height: 85vh;
+    padding: 100px;
+}
+
+.titleServicios {
+font-size: 3.5em;
+color: $mainTextColor-light;
+padding-bottom: 20px;
+padding-top: 30vh;
+}
+
+#servicios_cards {
+margin-top: 50px;
+}
+
+div#contenedorIntroServicios {
+@include flex-row(center);
+}
+
+.imgServicio {
+padding-right: 50px;
+}

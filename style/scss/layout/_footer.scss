@@ -1,0 +1,15 @@
+@use "../abstracts/variables";
+
+footer{
+    background-color: $mainColor;
+    color: $mainTextColor-light;
+    padding: 2% 5%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    .rrss{
+        display:flex;
+    }
+}
+

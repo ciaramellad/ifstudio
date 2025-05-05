@@ -1,0 +1,57 @@
+@use "../abstracts/variables";
+
+.botonBlack{
+    border: 1px solid $mainColor;
+    padding:10px 20px;
+    border-radius: 100px;
+    color: $mainColor;
+    background-color: transparent;
+    font-weight:600;
+    font-size: 18px;
+
+    &:hover{
+        color: $mainBgColor-light;
+        background-color: $mainColor-secondary;
+        border:none;
+    }
+}
+
+.botonWhite{
+    border: 1px solid $mainTextColor-light;
+    padding:10px 20px;
+    border-radius: 100px;
+    color: $mainTextColor-light;
+    background-color: transparent;
+    font-weight:600;
+    font-size: 18px;
+
+    &:hover{
+        color: $mainColor;
+        background-color: $mainColor-secondary;
+        border:none;
+    }
+}
+
+
+.botonForm{
+    border: 1px solid $mainTextColor-light;
+    border-radius: 100px;
+    color: $mainTextColor-light;
+    background-color: transparent;
+    font-weight:600;
+    font-size: 16px;
+    padding: 10px 25px;
+    margin-top: 30px;
+    
+    &:hover{
+        color: $mainBgColor-light;
+        background-color: $mainColor-secondary;
+        border:none;
+    }
+}
+
+
+button.navbar-toggler {
+    background-color: white !important;
+    padding: 10px;
+}

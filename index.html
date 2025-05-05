@@ -9,7 +9,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     
     <!---CSS style--->
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+
+
     
     <!--Font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -51,13 +56,13 @@
     
     <main>
         <section id="heroHome">
-            <h1 class="titleHome">Estudio de interiorismo y reformas integrales</h1>
-            <button class="botonBlack">¡Contactanos!</button>
+            <h1 class="titleHome animate__animated animate animate__fadeInLeft animate_delay-2s">Estudio de interiorismo y reformas integrales</h1>
+            <button class="botonWhite animate__animated animate animate__fadeInLeft animate_delay-2s">¡Contactanos!</button>
         </section>
 
         <section class="bgBlack">
-            <div class="container" id="contenedorIntro">
-                <img class="imgIntro" src="./img/impulso-creativo.jpg">
+            <div class="container animate__animated animate__fadeInUp animate_delay-2s" id="contenedorIntro">
+                <img data-aos="fade-up" class="imgIntro" src="./img/impulso-creativo.jpg">
                 <div class="contenedorTextoIntro">
                     <h2 class="textWhite">Un proceso creativo, participativo y transparente</h2>
                     <p class="textWhite">En nuestro proceso creativo, cada paso es una colaboración abierta y transparente. Trabajamos de la mano con nuestros clientes, fomentando la participación activa y asegurando que sus ideas sean escuchadas en todo momento. Creemos que la creatividad florece cuando se comparten perspectivas y se construye juntos, lo que nos permite ofrecer soluciones únicas y personalizadas. La transparencia es clave en cada etapa, brindando claridad y confianza durante todo el proceso.</p>
@@ -125,7 +130,7 @@
 
 
         <!--Formulario-->
-        <section id="Formulario">
+        <section data-aos="fade-up"  id="Formulario">
             <h2>Transforma tu espacio. <span class="textWhite">¡Comienza aquí!</span></h2>
             <form action="#" method="post">
                 <label for="nombre">Nombre:</label>
@@ -194,7 +199,10 @@
         </div>
         </div>
     </footer>
-    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

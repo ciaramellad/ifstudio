@@ -8,7 +8,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     
     <!---CSS style--->
-    <link rel="stylesheet" href="../style/style.css" />
+    <link rel="stylesheet" href="../style/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+
 
     <!--Font-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -51,8 +54,8 @@
   </header>
     <main>
       <section id="heroServicios">
-        <h1 class="titleServicios">Nuestros servicios</h1>
-        <button class="botonWhite">
+        <h1 class="titleServicios animate__animated animate animate__fadeInLeft animate_delay-2s">Nuestros servicios</h1>
+        <button class="botonWhite animate__animated animate animate__fadeInLeft animate_delay-2s">
           <a href="contacto.html">¡Contactanos!</a>
         </button>
       </section>
@@ -60,7 +63,7 @@
         <div class="container" id="contenedorIntroServicios">
           <img class="imgServicio" src="../img/servicio-ext.jpg" />
           <div class="contenedorTextoIntro">
-            <h2>Diseñamos Soluciones a Medida <span class="textRed">para Cada Espacio</span></h2>
+            <h2 data-aos="fade-up">Diseñamos Soluciones a Medida <span class="textRed">para Cada Espacio</span></h2>
             <p>
               En nuestro estudio, ofrecemos soluciones integrales de arquitectura, diseño de interiores, mobiliario y paisajismo. Cada proyecto es único, por lo que trabajamos de cerca contigo para crear espacios funcionales, estéticos y con identidad propia. Te ayudamos a transformar tu visión en realidad, con diseño a medida y calidad.
             </p>
@@ -163,5 +166,9 @@
       </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
   </body>
 </html>
