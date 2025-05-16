@@ -1,0 +1,19 @@
+@use "../abstracts/variables" as variables;
+
+#servicios_cards{
+    margin-top: 50px;
+}
+
+#servicios_cards .col {
+  overflow: hidden;
+}
+
+#servicios_cards .col img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+#servicios_cards .col img:hover {
+  transform: scale(1.05);
+}

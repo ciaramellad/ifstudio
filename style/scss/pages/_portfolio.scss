@@ -11,13 +11,12 @@
 
 #cardsProyectos{
     display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .cardSinglePorfolio{
-    width: 400px;
+    width: 33%;
 }
 .cardSinglePorfolioInformation{
     text-align: left;

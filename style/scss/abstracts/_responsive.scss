@@ -70,11 +70,14 @@
         flex-direction: column;
         justify-content: space-between;
         flex-wrap: wrap;
-        align-items: center;
     }
     #contenedorProyectosTexto{
         padding:20px;
     }
+    #cardSinglePorfolio{
+        width: 100%;
+    }
+
     #heroPortfolio{
         padding: 50px;
         text-align: center;
@@ -109,6 +112,9 @@
         flex-wrap: wrap;
         justify-content: center;
     }
+    .teamPerfil-single{
+    width: 100%;
+}
 
     /*CONTACTO*/
     #formDark form {
@@ -241,6 +247,9 @@
         width: 100%;
         flex-wrap: wrap;
         justify-content: center;
+    }
+    .teamPerfil-single{
+    width: 100%;
     }
 
     .equipoTitle{

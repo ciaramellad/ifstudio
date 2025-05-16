@@ -148,7 +148,7 @@ ul {
 }
 
 .titleHome {
-  font-size: 50px;
+  font-size: 2em;
   color: #ebebeb;
   padding-bottom: 20px;
   width: 50%;
@@ -286,7 +286,7 @@ img.imgIntro {
 }
 
 .cardSinglePorfolio {
-  width: 400px;
+  width: 33%;
 }
 
 .cardSinglePorfolioInformation {
@@ -310,10 +310,6 @@ img.imgIntro {
   color: #FFFFFF;
   padding-bottom: 20px;
   padding-top: 30vh;
-}
-
-#servicios_cards {
-  margin-top: 50px;
 }
 
 div#contenedorIntroServicios {
@@ -358,6 +354,10 @@ div#contenedorIntroNosotros {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+
+.teamPerfil-single {
+  width: 33%;
 }
 
 @media (max-width: 430px) {
@@ -426,10 +426,12 @@ div#contenedorIntroNosotros {
     flex-direction: column;
     justify-content: space-between;
     flex-wrap: wrap;
-    align-items: center;
   }
   #contenedorProyectosTexto {
     padding: 20px;
+  }
+  #cardSinglePorfolio {
+    width: 100%;
   }
   #heroPortfolio {
     padding: 50px;
@@ -462,6 +464,9 @@ div#contenedorIntroNosotros {
     width: 100%;
     flex-wrap: wrap;
     justify-content: center;
+  }
+  .teamPerfil-single {
+    width: 100%;
   }
   /*CONTACTO*/
   #formDark form {
@@ -585,6 +590,9 @@ div#contenedorIntroNosotros {
     width: 100%;
     flex-wrap: wrap;
     justify-content: center;
+  }
+  .teamPerfil-single {
+    width: 100%;
   }
   .equipoTitle {
     text-align: center;
