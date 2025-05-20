@@ -148,7 +148,6 @@ ul {
 }
 
 .titleHome {
-  font-size: 2em;
   color: #ebebeb;
   padding-bottom: 20px;
   width: 50%;
@@ -178,6 +177,10 @@ h3 {
 
 body {
   background: #FFFFFF;
+}
+
+.bgWhite container {
+  padding: 20px;
 }
 
 footer {
@@ -281,12 +284,14 @@ img.imgIntro {
 
 #cardsProyectos {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .cardSinglePorfolio {
-  width: 33%;
+  width: 32%;
+  background-color: #fff;
+  overflow: hidden;
 }
 
 .cardSinglePorfolioInformation {
@@ -578,6 +583,9 @@ div#contenedorIntroNosotros {
     flex-wrap: wrap;
     align-items: center;
   }
+  .cardSinglePorfolio {
+    width: 100%;
+  }
   #heroPortfolio {
     padding: 50px;
   }
@@ -597,6 +605,7 @@ div#contenedorIntroNosotros {
     width: 100%;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 20px;
   }
   .teamPerfil-single {
     width: 100%;
@@ -612,6 +621,11 @@ div#contenedorIntroNosotros {
   .cardItemTeam {
     padding: 10px;
     width: 100%;
+  }
+  .listaItems {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   /*FOOTER*/
   footer {
