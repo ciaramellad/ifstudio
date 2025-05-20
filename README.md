@@ -11,11 +11,21 @@ Ofrece servicios especializados en:
 ## 🛠 Tecnologías usadas
 
 - HTML5
+    - Etiquetas semánticas bajo estructura legible, limpia y clara
+    - Vinculación con hojas de estilos y scripts
+    - Enlaces funcionales
+    - Incluir imagenes
 - CSS3
   - Flexbox
   - Box Model
   - Pseudoclases
+  - Resposive - mediaqueries
 - Bootstraps
+- Sass
+    - Nesting
+    - Compilación
+- Animaciones y transiciones
+- SEO
 
 ## 💻 Enlace
 
